@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <div id="flexContainer">
+        <div id="background">
+            <div id="logoHolder">
+                <img id= "odinLogo" src="odin-lined.png" alt="Odin Logo">
+                <div>Odin</div>
+            </div>
+            <div id="logoLabel">Photo from a random post on reddit</div>
+        </div>
+        <div id="formContainer">
+            <div id="header">
+                <div id="headerText">This is not a real online service! You know you need something like this
+                    in your life to hlep you realize your deepest dreams. Sign up <em>now</em> to get started.
+                    <br/>
+                    <br/>
+                    You <em>know</em> you want to.
+                </div>
+            </div>
+            <div id="formBody">
+                <div id="formTitle">Let's do this!</div>
+                <form action="" method="post" id="userForm">
+                    <div id="formLeft">
+                        <div class="inputContainer">
+                            <div class="formLabel">First Name</div>
+                            <label for="first_name"><input type="text" id="first_name" required maxlength="20"></label>
+                        </div>
+                        <div class="inputContainer">
+                            <div class="formLabel">Email</div>
+                            <label for="email"><input type="email" id="email" required pattern="[a-zA-Z0-9+-.]+@+[a-zA-Z0-9+-.]+.+[a-z]{2,}"></label>
+                        </div>
+                        <div class="inputContainer">
+                            <div class="formLabel">Password</div>
+                            <label for="password"><input type="password" id="password" required minlength="8" maxlength="20"></label>
+                        </div>
+                        
+                    
+                        
+                    </div> 
+                    <div id="formRight">
+                        <div class="inputContainer">
+                            <div class="formLabel">Last Name</div>
+                            <label for="last_name"><input type="text" id="last_name" required maxlength="20"></label>
+                        </div>
+                        <div class="inputContainer">
+                            <div class="formLabel">Phone Number</div>
+                            <label for="phone_number"><input type="text" id="phone_number" required maxlength="10" minlength="10"></label>
+                        </div>
+                        <div class="inputContainer">
+                        <div class="formLabel">Confirm Password</div>
+                        <label for="confirm_password"><input type="password" id="confirm_password" required minlength="8" maxlength="20"></label>
+                        <div class="formLabel" id="errorElement"></div>
+                        </div>
+                    
+                    </div>
+                
+                </form>
+            </div>
+            <div id="footer">
+                <button type="submit" form="userForm">Create Account</button>
+                <div>Already have an account? <a href="empty.link">Log in</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

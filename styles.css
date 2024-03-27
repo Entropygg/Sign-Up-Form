@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    min-width: 1000px;
+}
+
+@font-face {
+    font-family: OdinFont;
+    src: url(../Sign-Up-Form/Fonts/Norse.otf);
+}
+
+#flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#header {
+    height: calc(100vh/3);
+    background-color: #f3f3f3;
+    position: relative;
+    font-size: 25px;
+}
+
+#headerText{
+    font-weight: bold;
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 50px;
+    margin-left:  50px;
+    margin-right: 100px;
+}
+
+#formBody {
+    position: relative;
+    height: calc(100vh/3);
+    box-shadow: 0 5px 5px #dad8d8;
+}
+
+#footer {
+    height: calc(100vh/3);
+    background-color: #f3f3f3;
+}
+
+#background {
+    background-image: url(bgsmall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: calc(100vw/3);
+}
+
+#logoHolder {
+    margin-top: calc(100vh * 0.3);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    text-align: center;
+    opacity: 50%;
+    max-height: 100px;
+}
+
+#logoLabel{
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    width: calc(100vw/3);
+    text-align: center;
+    color: white;
+}
+
+#logoHolder>div{
+    font-family: OdinFont;
+    font-size: 100px;
+    color: white;
+}
+
+#odinLogo{
+    height: auto;
+    max-width: 20%;
+    padding-left: 20%;
+}
+
+#formContainer {
+    width: calc((2 * 100vw)/3 ); 
+}
+
+.formLabel {
+    font-size: 14px;
+    font: bold;
+    color: #323232;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    
+}
+
+label {
+    margin-top: 0;
+}
+
+.inputContainer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 25px;
+}
+
+
+
+input {
+    border-style: solid;
+    border-color: #dad8d8;
+    border-width: 1px;
+    border-radius: 4px;
+    min-height: 24px;
+    min-width: 250px;
+}
+
+input:focus {
+    border-width: 2px;
+    border-color: #2563E2;
+    outline: none;
+}
+
+form.submitted input:invalid{
+    border-width: 2px;
+    border-color: #e22b25;
+    outline: none;
+}
+
+
+#formTitle {
+    margin-top: 16px;
+    margin-left: 40px;
+    color: #323232;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 6px;
+    border-width: 0;
+    background-color: #407008;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+a {
+    color: #407008; 
+    text-decoration: none;  
+    font-weight: bolder;
+}
+
+#footer>div {
+ margin-left: 50px;
+ margin-top: 50px;
+}
+
+#errorElement {
+    color: #e22b25;
+}
+
